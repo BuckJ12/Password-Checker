@@ -13,7 +13,7 @@ function App() {
 	return (
 		<>
 			<div>
-				<h1> Password Security Checker</h1>
+				<h1> Brute Force Password Security Checker</h1>
 			</div>
 			<div className='container'>
 				<a href='#'>

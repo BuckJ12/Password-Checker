@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface Props {
 	passwordPoss: string;
 	clockspeed: number;
@@ -35,7 +33,7 @@ function convertTimeToSmallestUnit(time: number) {
 	return `About ${convertedValue.toPrecision(2)}  ${units[units.length - 1]}`;
 }
 
-const PasswordDisplay: React.FC<Props> = ({ passwordPoss, clockspeed }) => {
+const PasswordDisplay = ({ passwordPoss, clockspeed }: Props) => {
 	let time: string = '';
 	let timeN: number = 0;
 	if (Number(passwordPoss)) {
