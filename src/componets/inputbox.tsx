@@ -1,3 +1,5 @@
+import CloseButton from '../assets/Close_Button.png';
+
 interface Props {
 	showInputBox: boolean;
 	setInputBox: React.Dispatch<React.SetStateAction<boolean>>;
@@ -30,7 +32,9 @@ const InputBox = ({
 	return (
 		<div>
 			<div className={`input-box ${showInputBox ? 'visible' : ''}`}>
-				<div className='closeButton' onClick={handleClose} children='X' />
+				<div className='closeButton' onClick={handleClose}>
+					<img src={CloseButton} />
+				</div>
 				<h2>Advanced Settings</h2>
 				<input
 					type='range'

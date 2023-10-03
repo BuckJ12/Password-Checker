@@ -33,10 +33,10 @@
 
 @keyframes logo-spin {
 	from {
-		transform: rotate(0deg);
+		transform: rotate(360deg);
 	}
 	to {
-		transform: rotate(360deg);
+		transform: rotate(0deg);
 	}
 }
 
@@ -64,7 +64,7 @@ input:focus {
 
 /* For Pop Up Settings box */
 .input-box {
-	background-color: #000000dd;
+	background-color: #000000e5;
 	position: fixed;
 	z-index: 1000;
 	top: -100%;
@@ -80,8 +80,12 @@ input:focus {
 	transform: translate(-50%, 2.5%);
 }
 
-.closeButton {
-	color: red;
+.closeButton img {
 	float: right;
-	font-size: 1.5;
+	aspect-ratio: auto;
+	flex: 1;
+	max-width: 5%;
+	max-height: 5%;
+	object-fit: scale-down;
+	transform: translate(-5%, 5%);
 }
