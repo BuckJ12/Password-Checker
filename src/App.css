@@ -89,3 +89,7 @@ input:focus {
 	object-fit: scale-down;
 	transform: translate(-5%, 5%);
 }
+
+.closeButton:hover {
+	filter: drop-shadow(0 0 0.5em #ff0000cc);
+}
