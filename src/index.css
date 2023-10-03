@@ -31,3 +31,12 @@ h2 {
 	font-size: 3vw;
 	line-height: 1.1;
 }
+
+p {
+	font-size: 1.5vw;
+}
+
+.explain {
+	font-size: 1.2vw;
+	color: rgb(225, 225, 225);
+}

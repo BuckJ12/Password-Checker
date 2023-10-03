@@ -35,7 +35,7 @@ function App() {
 				<a href='https://github.com/BuckJ12?tab=repositories' target='blank'>
 					<img src={BuckLogo} className='logo' alt='Buck logo' />
 				</a>
-				<a onClick={handleImageClick}>
+				<a href='#' onClick={handleImageClick}>
 					<img src={LockLogo} className='logo' alt='Lock logo' />
 				</a>
 			</div>

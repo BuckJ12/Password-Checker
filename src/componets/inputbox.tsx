@@ -41,6 +41,10 @@ const InputBox = ({
 					onChange={handleChangeClock}
 				/>
 				<p> Clock Speed {Clock} GHz</p>
+				<p className='explain'>
+					Clock Speed affects how many possibilities can be tried per second
+					Default: 5
+				</p>
 
 				<input
 					type='range'
@@ -51,6 +55,10 @@ const InputBox = ({
 					onChange={handleChangeCore}
 				/>
 				<p> Core Count: {Core} </p>
+				<p className='explain'>
+					Core Count effects how many instances of the brute force program are
+					run at a time Default: 4
+				</p>
 			</div>
 		</div>
 	);
