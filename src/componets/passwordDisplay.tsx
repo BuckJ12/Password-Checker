@@ -1,6 +1,7 @@
 interface Props {
 	passwordPoss: string;
 	clockspeed: number;
+	core: number;
 }
 
 function convertTimeToSmallestUnit(time: number) {
@@ -33,11 +34,11 @@ function convertTimeToSmallestUnit(time: number) {
 	return `About ${convertedValue.toPrecision(2)}  ${units[units.length - 1]}`;
 }
 
-const PasswordDisplay = ({ passwordPoss, clockspeed }: Props) => {
+const PasswordDisplay = ({ passwordPoss, clockspeed, core }: Props) => {
 	let time: string = '';
 	let timeN: number = 0;
 	if (Number(passwordPoss)) {
-		timeN = Number(passwordPoss) / clockspeed;
+		timeN = Number(passwordPoss) / (clockspeed * 1000000000 * core);
 		if (timeN < 1) {
 			time = 'less than a second';
 		} else {
