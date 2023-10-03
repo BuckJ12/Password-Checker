@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import LockLogo from './assets/Password.png';
 import BuckLogo from './assets/Moose.png';
 import Textbox from './componets/Textbox';
@@ -16,6 +16,9 @@ function App() {
 	const handleImageClick = () => {
 		setShowInputBox(!showInputBox);
 	};
+	useEffect(() => {
+		document.title = 'Brute Force Password Checker';
+	}, []);
 
 	return (
 		<>
@@ -27,7 +30,6 @@ function App() {
 				Core={Core}
 				setCore={setCore}
 			/>
-
 			<div>
 				<h1> Brute Force Password Security Checker</h1>
 			</div>
