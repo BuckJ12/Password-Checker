@@ -1,5 +1,5 @@
 # Password_Checker
- Checks Password Security Against Bruteforce attacks
+ Checks Password Security Against Bruteforce attacks and the top 1000000 passwords
 
 Known issues
 Standardize code layout 
