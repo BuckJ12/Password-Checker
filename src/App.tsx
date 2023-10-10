@@ -17,7 +17,7 @@ function App() {
 		setShowInputBox(!showInputBox);
 	};
 	useEffect(() => {
-		document.title = 'Brute Force Password Checker';
+		document.title = 'Password Security Checker';
 	}, []);
 
 	return (
@@ -31,7 +31,7 @@ function App() {
 				setCore={setCore}
 			/>
 			<div>
-				<h1> Brute Force Password Security Checker</h1>
+				<h1>Password Security Checker</h1>
 			</div>
 			<div className='container'>
 				<a href='https://github.com/BuckJ12?tab=repositories' target='blank'>
