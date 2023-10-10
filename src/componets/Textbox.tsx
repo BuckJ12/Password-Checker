@@ -1,4 +1,6 @@
 /* eslint-disable no-useless-escape */
+
+import file from './100000-most-common-passwords.txt';
 interface Props {
 	Password: string;
 	setPassword: React.Dispatch<React.SetStateAction<string>>;
@@ -39,9 +41,24 @@ const Textbox = ({ Password, setPassword, setNumber }: Props) => {
 				setPassword(e.target.value);
 				let exp: number = 0;
 				let fNum = 0;
+				let passwordList: string[];
 
 				//Tests if only valid characters are present
 				if (/^[{}?_\[\]\-+=!@#$%^&*()\dA-Za-z]+$/.test(e.target.value)) {
+					//Check against 1,000,000 most common passwords
+					fetch(file)
+						.then((response) => response.text())
+						.then((data) => {
+							passwordList = data.split(/\r?\n/);
+							console.log(passwordList);
+
+							if (passwordList.includes(e.target.value)) {
+								setNumber(
+									'Your Password is in the top 100000 most common passwords'
+								);
+							}
+						});
+
 					//Tests for each type of charater used in brute force attack
 					exp += hasUpperCase(e.target.value) ? 26 : 0;
 					exp += hasLowerCase(e.target.value) ? 26 : 0;
