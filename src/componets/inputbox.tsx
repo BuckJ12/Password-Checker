@@ -31,7 +31,7 @@ const InputBox = ({
 
 	return (
 		<div>
-			<div className={`input-box ${showInputBox ? 'visible' : ''}`}>
+			<div className={`pop-up-box ${showInputBox ? 'visible' : ''}`}>
 				<div className='closeButton' onClick={handleClose}>
 					<a href='#'>
 						<img src={CloseButton} />

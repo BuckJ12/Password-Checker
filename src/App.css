@@ -11,6 +11,7 @@
 	padding: 1.5em;
 	will-change: filter;
 	transition: filter 300ms;
+	filter: drop-shadow(0px 0px 0 #00ffffff);
 }
 
 .container {
@@ -42,7 +43,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
 	a:nth-of-type(2) .logo {
-		animation: logo-spin infinite 20s linear;
+		animation: logo-spin infinite 15s linear;
 	}
 }
 
@@ -51,11 +52,17 @@ input {
 	height: 5vw;
 	font-size: 4vw;
 	border: none;
-	border-bottom: 2px solid #0000ff;
+	border-bottom: 2px solid #00aaff;
+	will-change: filter;
+	transition: filter 300ms;
+	filter: drop-shadow(0px 0px 0 #00ffffff);
 }
 
 input:focus {
 	background-color: #6464af;
+}
+input:hover {
+	filter: drop-shadow(0 0 0.5em #0000ffcc);
 }
 
 .password {
@@ -63,7 +70,7 @@ input:focus {
 }
 
 /* For Pop Up Settings box */
-.input-box {
+.pop-up-box {
 	background-color: #000000e5;
 	position: fixed;
 	z-index: 1000;
@@ -73,7 +80,7 @@ input:focus {
 	transition: opacity 0.5s ease-in;
 }
 
-.input-box.visible {
+.pop-up-box.visible {
 	opacity: 1;
 	top: 0%;
 	left: 50%;
