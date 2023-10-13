@@ -1,12 +1,11 @@
-# Password_Checker
- Checks Password Security Against Bruteforce attacks and the top 1000000 passwords
+<h3># Password_Checker</h3>
+<h2>Checks Password Security Against Bruteforce attacks and the top 1000000 passwords</h2>
+<h2>Advanced Menu Can be accessed by clicking the lock image</h2>
+<h1>Can change the number of Cores used by the hacker</h1>
+<h1>Change the frequency used by the hacker</h1>
 
-Known issues
-Standardize code layout 
-Separate files
-Non-Standard characters can break program
+Passwords must contain Valid Characters or no calculation will happen
 
-Future Features
-Add slider to adjust clock speed 
-add slider to asjust core count
-fix image hover colors
+How to run
+After Cloning the repostitory
+Use npm run dev
