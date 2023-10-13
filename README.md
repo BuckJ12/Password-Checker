@@ -14,5 +14,6 @@ Passwords must contain Valid Characters or no calculation will happen<br>
 
 
 <h2>How to run</h2>
-After Cloning the repostitory<br>
+<p>After Cloning the repostitory<br>
 Use npm run dev
+</p>
