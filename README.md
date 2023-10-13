@@ -6,6 +6,6 @@ Change the frequency used by the hacker<br>
 
 Passwords must contain Valid Characters or no calculation will happen<br>
 
-How to run<br>
+<h3>How to run</h3>
 After Cloning the repostitory<br>
 Use npm run dev
