@@ -15,10 +15,10 @@ Passwords must contain Valid Characters or no calculation will happen<br>
 <h2>Installation</h2>
 <p>
   After Cloning the repo 
-  install node.js https://nodejs.org/en to check if you already have it installed run npm node -v 
-  as long as you have a version greater than 19 it will work older versions may work but i cant guarantee it
-  then run 
-  npm install or npm i
+  install node.js https://nodejs.org/en to check if you already have it installed run npm node -v   
+  as long as you have a version greater than 19 it will work older versions may work but i cant guarantee it  
+  then run  
+  npm install or npm i  
 </p>
 
 <h2>How to run</h2>
